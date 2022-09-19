@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 @main
 struct timetable4icu_gitApp: App {
+    let sheetManager: PartialSheetManager = PartialSheetManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView().environmentObject(ContentViewModel()).environmentObject(myModel()).environmentObject(sheetManager)
         }
     }
 }

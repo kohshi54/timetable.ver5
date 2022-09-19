@@ -11,6 +11,25 @@
 		C82C141228D8495A00D6E563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C141128D8495A00D6E563 /* ContentView.swift */; };
 		C82C141428D8495D00D6E563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141328D8495D00D6E563 /* Assets.xcassets */; };
 		C82C141728D8495D00D6E563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141628D8495D00D6E563 /* Preview Assets.xcassets */; };
+		C82C141F28D849EB00D6E563 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C82C141E28D849EB00D6E563 /* PartialSheet */; };
+		C82C142228D84ADE00D6E563 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C82C142128D84ADE00D6E563 /* RealmSwift */; };
+		C82C142428D8551F00D6E563 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142328D8551F00D6E563 /* HomeView.swift */; };
+		C82C142628D855DD00D6E563 /* AddTable&SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142528D855DD00D6E563 /* AddTable&SettingView.swift */; };
+		C82C142A28D8562400D6E563 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142928D8562400D6E563 /* TimetableView.swift */; };
+		C82C142C28D8564F00D6E563 /* EditDetailSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142B28D8564F00D6E563 /* EditDetailSwitchView.swift */; };
+		C82C142E28D8566B00D6E563 /* LunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142D28D8566B00D6E563 /* LunchView.swift */; };
+		C82C143028D8568A00D6E563 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142F28D8568A00D6E563 /* EditView.swift */; };
+		C82C143228D857FD00D6E563 /* PartialSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143128D857FD00D6E563 /* PartialSheetView.swift */; };
+		C82C143428D8581F00D6E563 /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143328D8581F00D6E563 /* AddClassView.swift */; };
+		C82C143628D8583900D6E563 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143528D8583900D6E563 /* ModalView.swift */; };
+		C82C143828D8585400D6E563 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143728D8585400D6E563 /* DetailView.swift */; };
+		C82C143A28D8586D00D6E563 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143928D8586D00D6E563 /* TaskListView.swift */; };
+		C82C143C28D8588F00D6E563 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143B28D8588F00D6E563 /* Realm.swift */; };
+		C82C143E28D858A400D6E563 /* UniversalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143D28D858A400D6E563 /* UniversalData.swift */; };
+		C82C144028D858C300D6E563 /* function.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C143F28D858C300D6E563 /* function.swift */; };
+		C82C144428D8593700D6E563 /* ALL2022-2-13.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144328D8593700D6E563 /* ALL2022-2-13.txt */; };
+		C82C144628D8594000D6E563 /* ALL2021.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144528D8594000D6E563 /* ALL2021.txt */; };
+		C82C144828D8594800D6E563 /* ALL2020.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144728D8594800D6E563 /* ALL2020.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +38,23 @@
 		C82C141128D8495A00D6E563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C82C141328D8495D00D6E563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C141628D8495D00D6E563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C82C142328D8551F00D6E563 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C82C142528D855DD00D6E563 /* AddTable&SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTable&SettingView.swift"; sourceTree = "<group>"; };
+		C82C142928D8562400D6E563 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
+		C82C142B28D8564F00D6E563 /* EditDetailSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailSwitchView.swift; sourceTree = "<group>"; };
+		C82C142D28D8566B00D6E563 /* LunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchView.swift; sourceTree = "<group>"; };
+		C82C142F28D8568A00D6E563 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		C82C143128D857FD00D6E563 /* PartialSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSheetView.swift; sourceTree = "<group>"; };
+		C82C143328D8581F00D6E563 /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
+		C82C143528D8583900D6E563 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		C82C143728D8585400D6E563 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C82C143928D8586D00D6E563 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		C82C143B28D8588F00D6E563 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		C82C143D28D858A400D6E563 /* UniversalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalData.swift; sourceTree = "<group>"; };
+		C82C143F28D858C300D6E563 /* function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = function.swift; sourceTree = "<group>"; };
+		C82C144328D8593700D6E563 /* ALL2022-2-13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ALL2022-2-13.txt"; path = "../../../MyScraping/ALL2022-2-13.txt"; sourceTree = "<group>"; };
+		C82C144528D8594000D6E563 /* ALL2021.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ALL2021.txt; path = ../../../MyScraping/ALL2021.txt; sourceTree = "<group>"; };
+		C82C144728D8594800D6E563 /* ALL2020.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ALL2020.txt; path = ../../../MyScraping/ALL2020.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82C142228D84ADE00D6E563 /* RealmSwift in Frameworks */,
+				C82C141F28D849EB00D6E563 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +91,23 @@
 			children = (
 				C82C140F28D8495A00D6E563 /* timetable4icu_gitApp.swift */,
 				C82C141128D8495A00D6E563 /* ContentView.swift */,
+				C82C142328D8551F00D6E563 /* HomeView.swift */,
+				C82C142528D855DD00D6E563 /* AddTable&SettingView.swift */,
+				C82C142B28D8564F00D6E563 /* EditDetailSwitchView.swift */,
+				C82C142928D8562400D6E563 /* TimetableView.swift */,
+				C82C142D28D8566B00D6E563 /* LunchView.swift */,
+				C82C142F28D8568A00D6E563 /* EditView.swift */,
+				C82C143128D857FD00D6E563 /* PartialSheetView.swift */,
+				C82C143328D8581F00D6E563 /* AddClassView.swift */,
+				C82C143528D8583900D6E563 /* ModalView.swift */,
+				C82C143728D8585400D6E563 /* DetailView.swift */,
+				C82C143928D8586D00D6E563 /* TaskListView.swift */,
+				C82C143B28D8588F00D6E563 /* Realm.swift */,
+				C82C143D28D858A400D6E563 /* UniversalData.swift */,
+				C82C143F28D858C300D6E563 /* function.swift */,
+				C82C144328D8593700D6E563 /* ALL2022-2-13.txt */,
+				C82C144528D8594000D6E563 /* ALL2021.txt */,
+				C82C144728D8594800D6E563 /* ALL2020.txt */,
 				C82C141328D8495D00D6E563 /* Assets.xcassets */,
 				C82C141528D8495D00D6E563 /* Preview Content */,
 			);
@@ -83,6 +138,10 @@
 			dependencies = (
 			);
 			name = "timetable4icu-git";
+			packageProductDependencies = (
+				C82C141E28D849EB00D6E563 /* PartialSheet */,
+				C82C142128D84ADE00D6E563 /* RealmSwift */,
+			);
 			productName = "timetable4icu-git";
 			productReference = C82C140C28D8495A00D6E563 /* timetable4icu-git.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +170,10 @@
 				Base,
 			);
 			mainGroup = C82C140328D8495900D6E563;
+			packageReferences = (
+				C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = C82C140D28D8495A00D6E563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82C141728D8495D00D6E563 /* Preview Assets.xcassets in Resources */,
+				C82C144428D8593700D6E563 /* ALL2022-2-13.txt in Resources */,
+				C82C144828D8594800D6E563 /* ALL2020.txt in Resources */,
 				C82C141428D8495D00D6E563 /* Assets.xcassets in Resources */,
+				C82C144628D8594000D6E563 /* ALL2021.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +203,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82C143628D8583900D6E563 /* ModalView.swift in Sources */,
+				C82C143828D8585400D6E563 /* DetailView.swift in Sources */,
+				C82C142E28D8566B00D6E563 /* LunchView.swift in Sources */,
+				C82C143C28D8588F00D6E563 /* Realm.swift in Sources */,
+				C82C143428D8581F00D6E563 /* AddClassView.swift in Sources */,
+				C82C142A28D8562400D6E563 /* TimetableView.swift in Sources */,
+				C82C143028D8568A00D6E563 /* EditView.swift in Sources */,
+				C82C142C28D8564F00D6E563 /* EditDetailSwitchView.swift in Sources */,
+				C82C143A28D8586D00D6E563 /* TaskListView.swift in Sources */,
+				C82C142428D8551F00D6E563 /* HomeView.swift in Sources */,
+				C82C142628D855DD00D6E563 /* AddTable&SettingView.swift in Sources */,
 				C82C141228D8495A00D6E563 /* ContentView.swift in Sources */,
+				C82C143E28D858A400D6E563 /* UniversalData.swift in Sources */,
+				C82C143228D857FD00D6E563 /* PartialSheetView.swift in Sources */,
 				C82C141028D8495A00D6E563 /* timetable4icu_gitApp.swift in Sources */,
+				C82C144028D858C300D6E563 /* function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timetable4icu-git/Preview Content\"";
@@ -275,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timetable4icu-git/Preview Content\"";
@@ -304,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +423,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C82C141E28D849EB00D6E563 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+		C82C142128D84ADE00D6E563 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C82C140428D8495900D6E563 /* Project object */;
 }
