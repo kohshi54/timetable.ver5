@@ -425,8 +425,9 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				kind = versionRange;
+				maximumVersion = 2.9.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {

@@ -10,6 +10,7 @@ import PartialSheet
 
 struct SchedulePartialView: View {
     // EnvironmentObjectとしてPartialSheetManagerを定義
+    // PartialSheetのバージョンを3に上げると動かなくなります、、、
     @EnvironmentObject var partialSheetManager: PartialSheetManager
     
     @EnvironmentObject var m: myModel
