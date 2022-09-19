@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C82C141028D8495A00D6E563 /* timetable4icu_gitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C140F28D8495A00D6E563 /* timetable4icu_gitApp.swift */; };
-		C82C141228D8495A00D6E563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C141128D8495A00D6E563 /* ContentView.swift */; };
 		C82C141428D8495D00D6E563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141328D8495D00D6E563 /* Assets.xcassets */; };
 		C82C141728D8495D00D6E563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141628D8495D00D6E563 /* Preview Assets.xcassets */; };
 		C82C141F28D849EB00D6E563 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C82C141E28D849EB00D6E563 /* PartialSheet */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		C82C140C28D8495A00D6E563 /* timetable4icu-git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "timetable4icu-git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C140F28D8495A00D6E563 /* timetable4icu_gitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetable4icu_gitApp.swift; sourceTree = "<group>"; };
-		C82C141128D8495A00D6E563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C82C141328D8495D00D6E563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C141628D8495D00D6E563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C82C142328D8551F00D6E563 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				C82C140F28D8495A00D6E563 /* timetable4icu_gitApp.swift */,
-				C82C141128D8495A00D6E563 /* ContentView.swift */,
 				C82C142328D8551F00D6E563 /* HomeView.swift */,
 				C82C142528D855DD00D6E563 /* AddTable&SettingView.swift */,
 				C82C142B28D8564F00D6E563 /* EditDetailSwitchView.swift */,
@@ -214,7 +211,6 @@
 				C82C143A28D8586D00D6E563 /* TaskListView.swift in Sources */,
 				C82C142428D8551F00D6E563 /* HomeView.swift in Sources */,
 				C82C142628D855DD00D6E563 /* AddTable&SettingView.swift in Sources */,
-				C82C141228D8495A00D6E563 /* ContentView.swift in Sources */,
 				C82C143E28D858A400D6E563 /* UniversalData.swift in Sources */,
 				C82C143228D857FD00D6E563 /* PartialSheetView.swift in Sources */,
 				C82C141028D8495A00D6E563 /* timetable4icu_gitApp.swift in Sources */,
