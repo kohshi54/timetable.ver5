@@ -21,7 +21,6 @@ struct LunchView: View {
     @FocusState var activityInput: Bool
     var body: some View {
         VStack {
-            
             TabView(selection: $tabselection) {
                 VStack {
                     VStack(spacing: 0) {
@@ -50,7 +49,15 @@ struct LunchView: View {
                             HStack {
                                 Text("\(lunchoption)")
                                 if lunchoption == "その他" {
-                                    TextField("", text: $tabselection).textFieldStyle(RoundedBorderTextFieldStyle()).focused(self.$activityInput)
+                                    TextField("", text: $tabselection).textFieldStyle(RoundedBorderTextFieldStyle()).focused(self.$activityInput).toolbar {
+                                            ToolbarItemGroup(placement: .keyboard) {
+                                                Spacer()
+                                                Button("\(Text("Done").bold())") {
+                                                    activityInput = false
+                                                    focusMemo = false
+                                                }
+                                            }
+                                        }
                                 }
                                 Spacer()
                             }
@@ -116,7 +123,7 @@ struct LunchView: View {
                 }
             }
             
-            if activityInput {
+            if !activityInput {
                 Group {
                     VStack(spacing: 0) {
                         HStack {
