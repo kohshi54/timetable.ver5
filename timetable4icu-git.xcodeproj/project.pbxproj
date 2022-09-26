@@ -10,8 +10,6 @@
 		C82C141028D8495A00D6E563 /* timetable4icu_gitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C140F28D8495A00D6E563 /* timetable4icu_gitApp.swift */; };
 		C82C141428D8495D00D6E563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141328D8495D00D6E563 /* Assets.xcassets */; };
 		C82C141728D8495D00D6E563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C141628D8495D00D6E563 /* Preview Assets.xcassets */; };
-		C82C141F28D849EB00D6E563 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C82C141E28D849EB00D6E563 /* PartialSheet */; };
-		C82C142228D84ADE00D6E563 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C82C142128D84ADE00D6E563 /* RealmSwift */; };
 		C82C142428D8551F00D6E563 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142328D8551F00D6E563 /* HomeView.swift */; };
 		C82C142628D855DD00D6E563 /* AddTable&SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142528D855DD00D6E563 /* AddTable&SettingView.swift */; };
 		C82C142A28D8562400D6E563 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C142928D8562400D6E563 /* TimetableView.swift */; };
@@ -29,6 +27,8 @@
 		C82C144428D8593700D6E563 /* ALL2022-2-13.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144328D8593700D6E563 /* ALL2022-2-13.txt */; };
 		C82C144628D8594000D6E563 /* ALL2021.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144528D8594000D6E563 /* ALL2021.txt */; };
 		C82C144828D8594800D6E563 /* ALL2020.txt in Resources */ = {isa = PBXBuildFile; fileRef = C82C144728D8594800D6E563 /* ALL2020.txt */; };
+		C82C148528D9969900D6E563 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C82C148428D9969900D6E563 /* PartialSheet */; };
+		C82C148828D9971500D6E563 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C82C148728D9971500D6E563 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C82C142228D84ADE00D6E563 /* RealmSwift in Frameworks */,
-				C82C141F28D849EB00D6E563 /* PartialSheet in Frameworks */,
+				C82C148828D9971500D6E563 /* RealmSwift in Frameworks */,
+				C82C148528D9969900D6E563 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +136,8 @@
 			);
 			name = "timetable4icu-git";
 			packageProductDependencies = (
-				C82C141E28D849EB00D6E563 /* PartialSheet */,
-				C82C142128D84ADE00D6E563 /* RealmSwift */,
+				C82C148428D9969900D6E563 /* PartialSheet */,
+				C82C148728D9971500D6E563 /* RealmSwift */,
 			);
 			productName = "timetable4icu-git";
 			productReference = C82C140C28D8495A00D6E563 /* timetable4icu-git.app */;
@@ -168,8 +168,8 @@
 			);
 			mainGroup = C82C140328D8495900D6E563;
 			packageReferences = (
-				C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */,
-				C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				C82C148328D9969900D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				C82C148628D9971500D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = C82C140D28D8495A00D6E563 /* Products */;
 			projectDirPath = "";
@@ -421,7 +421,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+		C82C148328D9969900D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
 			requirement = {
@@ -430,7 +430,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		C82C148628D9971500D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-cocoa";
 			requirement = {
@@ -441,14 +441,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C82C141E28D849EB00D6E563 /* PartialSheet */ = {
+		C82C148428D9969900D6E563 /* PartialSheet */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C82C141D28D849EB00D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			package = C82C148328D9969900D6E563 /* XCRemoteSwiftPackageReference "PartialSheet" */;
 			productName = PartialSheet;
 		};
-		C82C142128D84ADE00D6E563 /* RealmSwift */ = {
+		C82C148728D9971500D6E563 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C82C142028D84ADE00D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = C82C148628D9971500D6E563 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

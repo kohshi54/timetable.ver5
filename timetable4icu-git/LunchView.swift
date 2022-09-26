@@ -18,6 +18,7 @@ struct LunchView: View {
     @FocusState var focusMemo:Bool
     @State var lunchColor = ""
     var rows: [GridItem] = Array(repeating: .init(.fixed(50)), count: 2)
+    @FocusState var activityInput: Bool
     var body: some View {
         VStack {
             
@@ -48,8 +49,12 @@ struct LunchView: View {
                             }
                             HStack {
                                 Text("\(lunchoption)")
+                                if lunchoption == "その他" {
+                                    TextField("", text: $tabselection).textFieldStyle(RoundedBorderTextFieldStyle()).focused(self.$activityInput)
+                                }
                                 Spacer()
-                            }.frame(width: 72)
+                            }
+//                            .frame(width: 72)
                             
                             Spacer()
                             
@@ -73,72 +78,76 @@ struct LunchView: View {
                     }
                 }
             }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            
-            VStack {
-                VStack(spacing: 0) {
-                    HStack {
-                        Text("Color").foregroundColor(.blue).bold()
-                        Spacer()
-                    }
-                    Rectangle().frame(height: 1).foregroundColor(.blue)
-                }.padding(.leading)
-                TabView(selection: $lunchColor) {
-                    LazyHGrid(rows: rows, spacing: 12) {
-                        ForEach(colorArray, id: \.self) { oneColor in
-                            Circle()
-                                .fill(Color("\(oneColor)"))
-                                .frame(width: 50, height: 50)
-                                .overlay(Circle()
-                                            .stroke(Color.black, lineWidth: oneColor == lunchColor ? 2 : 0.5))
-                                .onTapGesture(perform: {
-                                    withAnimation(Animation.linear(duration: 0.1)) {
-                                        if lunchColor == oneColor {
-                                            lunchColor = ""
-                                        } else {
-                                            lunchColor = oneColor
-                                        }
-                                    }
-                                })
-                        }
-                    }
-                }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)).frame(height: 110).padding(.bottom)
-                .onChange(of: lunchColor) { lunchCol in
-                    m.arrayColor[hnum][vnum] = lunchColor
-                    
-                    addCellDataToRealm(id: idSaved, m: m, hnum: hnum, vnum: vnum, target: "\(cellNameForRealm[hnum][vnum])")
-                }
-            }
-            
-            Group {
-                VStack(spacing: 0) {
-                    HStack {
-                        Text("Memo").foregroundColor(.blue).bold()
-                        Spacer()
-                    }
-                    Rectangle().frame(height: 1).foregroundColor(.blue)
-                }.padding(.leading)
-                TextEditor(text: $lunchMemo)
-                    .overlay() {
-                        RoundedRectangle(cornerRadius: 20).stroke(Color.blue)
-                    }
-                    .padding(.horizontal)
-                    .padding(.bottom)
-                    .focused(self.$focusMemo)
-                    .toolbar {
-                        ToolbarItemGroup(placement: .keyboard) {
+            if !activityInput {
+                VStack {
+                    VStack(spacing: 0) {
+                        HStack {
+                            Text("Color").foregroundColor(.blue).bold()
                             Spacer()
-                            Button("\(Text("Done").bold())") {
-                                focusMemo = false
+                        }
+                        Rectangle().frame(height: 1).foregroundColor(.blue)
+                    }.padding(.leading)
+                    TabView(selection: $lunchColor) {
+                        LazyHGrid(rows: rows, spacing: 12) {
+                            ForEach(colorArray, id: \.self) { oneColor in
+                                Circle()
+                                    .fill(Color("\(oneColor)"))
+                                    .frame(width: 50, height: 50)
+                                    .overlay(Circle()
+                                                .stroke(Color.black, lineWidth: oneColor == lunchColor ? 2 : 0.5))
+                                    .onTapGesture(perform: {
+                                        withAnimation(Animation.linear(duration: 0.1)) {
+                                            if lunchColor == oneColor {
+                                                lunchColor = ""
+                                            } else {
+                                                lunchColor = oneColor
+                                            }
+                                        }
+                                    })
                             }
                         }
                     }
-                    .onChange(of: lunchMemo) { value in
-                        
-                        m.arrayInstructor[hnum][vnum] = lunchMemo
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never)).frame(height: 110).padding(.bottom)
+                    .onChange(of: lunchColor) { lunchCol in
+                        m.arrayColor[hnum][vnum] = lunchColor
                         
                         addCellDataToRealm(id: idSaved, m: m, hnum: hnum, vnum: vnum, target: "\(cellNameForRealm[hnum][vnum])")
                     }
+                }
+            }
+            
+            if activityInput {
+                Group {
+                    VStack(spacing: 0) {
+                        HStack {
+                            Text("Memo").foregroundColor(.blue).bold()
+                            Spacer()
+                        }
+                        Rectangle().frame(height: 1).foregroundColor(.blue)
+                    }.padding(.leading)
+                    TextEditor(text: $lunchMemo)
+                        .overlay() {
+                            RoundedRectangle(cornerRadius: 20).stroke(Color.blue)
+                        }
+                        .padding(.horizontal)
+                        .padding(.bottom)
+                        .focused(self.$focusMemo)
+                        .toolbar {
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Spacer()
+                                Button("\(Text("Done").bold())") {
+                                    focusMemo = false
+                                    activityInput = false
+                                }
+                            }
+                        }
+                        .onChange(of: lunchMemo) { value in
+                            
+                            m.arrayInstructor[hnum][vnum] = lunchMemo
+                            
+                            addCellDataToRealm(id: idSaved, m: m, hnum: hnum, vnum: vnum, target: "\(cellNameForRealm[hnum][vnum])")
+                        }
+                }
             }
             
             

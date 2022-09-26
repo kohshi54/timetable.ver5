@@ -79,7 +79,7 @@ struct TimeTableView: View {
                                 }
                                 
                             }.frame(width: geometry.size.width * 0.09)
-                            Divider().background(Color("separator"))
+                            Divider().background(Color("separator"))    //ここに高さ追加すれば7限にした時tabbarに線が透ける問題解決できそう？？？
                             GeometryReader { geometryScheduleArea in
                                 HStack(alignment: .top, spacing: 0) {
                                     ForEach(SatFlg ? 0...5 : 0...4, id: \.self) { hnum in
@@ -88,9 +88,11 @@ struct TimeTableView: View {
                                                 if vnum != 3 {
                                                     NavigationLink(destination: EditDetailSwitchView(isAdd: m.array[hnum][vnum].isEmpty, hnum: hnum, vnum: vnum)) {
                                                         VStack {
-                                                            Text("\(m.array[hnum][vnum])")
-                                                            if !((m.arrayRoom[hnum][vnum] == "NO DATA") || (m.arrayRoom[hnum][vnum] == "")) {
-                                                                Text(m.arrayRoom[hnum][vnum]).padding(.top, 5)
+                                                            if (showNameBool(hnum: hnum, vnum: vnum, m: m)) {
+                                                                Text("\(m.array[hnum][vnum])")
+                                                                if !((m.arrayRoom[hnum][vnum] == "NO DATA") || (m.arrayRoom[hnum][vnum] == "")) {
+                                                                    Text(m.arrayRoom[hnum][vnum]).padding(.top, 5)
+                                                                }
                                                             }
                                                         }
                                                         .modifier(cellWidthHeightSize(hnum: hnum, vnum: vnum, SatFlg: SatFlg, eighthFlg: eighthFlg, geometryScheduleAreaSize: geometryScheduleArea.size))

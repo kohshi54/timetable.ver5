@@ -16,11 +16,9 @@ struct HomeView: View {
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = UIColor(Color("silver"))
-        UINavigationBar.appearance().tintColor = UIColor(Color("silver"))
 
         UITabBar.appearance().backgroundColor = UIColor(Color("dark blue"))
         
-        UITabBar.appearance().unselectedItemTintColor = UIColor(Color("silver"))
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color("silver"))
     }
     var body: some View {

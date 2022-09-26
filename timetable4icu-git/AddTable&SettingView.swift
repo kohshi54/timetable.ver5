@@ -138,6 +138,7 @@ struct AddTableAndSettingView: View {
                         .padding()
                     HStack {
                         Spacer()
+                        // ios16になってラベルの表示がおかしくなったので、一旦label: Text("Term")無くてもいいかも？
                         Picker(selection: $selectionTerm, label: Text("Term")) {
                             Text("Winter").tag(2)
                             Text("Autumn").tag(1)

@@ -368,6 +368,22 @@ func dividerShowBool(hnum: Int, vnum: Int, m: myModel) -> Bool {
     }
 }
 
+/* 連続授業の際にios15まではフレームを消せば講義名が表示されなくなっていたからよかったけど、
+   ios16になってフレームを消しても講義名が表示されてしまうので
+   同じ講義が連続する際は2つ目以降の名前は消すように修正。（講義名が一コマ前と同じなら表示しないっていう処理）
+*/
+func showNameBool(hnum: Int, vnum: Int, m: myModel) -> Bool {
+    if (vnum == 0) {
+        return true
+    } else if m.array[hnum][vnum].isEmpty {
+        return true
+    } else if (m.array[hnum][vnum] == m.array[hnum][vnum-1]) {
+        return false
+    } else {
+        return true
+    }
+}
+
 
 func judgeOverlap(day: String, m: myModel) -> (Bool, String) {
     var judge: Bool = false

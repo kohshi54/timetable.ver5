@@ -53,7 +53,7 @@ struct TaskListViewVertical: View {
                     VStack {
                         Text("課題無し！！！").font(.system(.title, design: .monospaced))
                         Text("オレえらい！！！さすが！！！").font(.system(.title, design: .monospaced))
-                        Image("Teruteru5")
+                        Image("nanami").resizable().scaledToFit()
                     }
                 }
             }

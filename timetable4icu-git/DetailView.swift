@@ -216,7 +216,7 @@ struct DetailView: View {
             }
             
             HStack {
-                TextField("タスク名", text: $taskTitle)
+                TextField("Tap here to add task :)", text: $taskTitle)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .focused(self.$focus)
                     .padding()
