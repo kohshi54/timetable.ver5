@@ -138,8 +138,8 @@ struct AddTableAndSettingView: View {
                         .padding()
                     HStack {
                         Spacer()
-                        // ios16になってラベルの表示がおかしくなったので、一旦label: Text("Term")無くてもいいかも？
-                        Picker(selection: $selectionTerm, label: Text("Term")) {
+                        // ios16になってラベルの表示がおかしくなったので、一旦label: Text("Term")を一旦消す
+                        Picker(selection: $selectionTerm, label: Text("")) {
                             Text("Winter").tag(2)
                             Text("Autumn").tag(1)
                             Text("Spring").tag(0)
@@ -150,7 +150,7 @@ struct AddTableAndSettingView: View {
                         }
                         .padding(.bottom)
                         Spacer()
-                        Picker(selection: $selectionYear, label: Text("Year")) {
+                        Picker(selection: $selectionYear, label: Text("")) {
                             Text("2020").tag(2)
                             Text("2021").tag(1)
                             Text("2022").tag(0)

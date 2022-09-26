@@ -35,13 +35,13 @@ struct SchedulePartialView: View {
         VStack {
             HStack() {
                 Spacer()
-                Picker(selection: $selectionTime, label: Text("ラベル")) {
+                Picker(selection: $selectionTime, label: Text("")) {
                     ForEach(time, id: \.self) { time in
                         Text("\(time)")
                     }
                 }
                 Text("/").clipped()
-                Picker(selection: $selectionDay, label: Text("ラベル")) {
+                Picker(selection: $selectionDay, label: Text("")) {
                     ForEach(day, id: \.self) { day in
                         Text(day)
                     }
@@ -133,7 +133,7 @@ struct ModePartialView: View {
         
         HStack() {
             Spacer()
-            Picker(selection: $selectionMode, label: Text("ラベル")) {
+            Picker(selection: $selectionMode, label: Text("")) {
                 ForEach(modeArray, id: \.self) { mode in
                     Text(mode)
                 }
@@ -177,7 +177,7 @@ struct ColorPartialView: View {
         
         HStack() {
             Spacer()
-            Picker(selection: $selectionColor, label: Text("ラベル")) {
+            Picker(selection: $selectionColor, label: Text("")) {
                 ForEach(colorArray, id: \.self) { mode in
                     Text(mode)
                 }
