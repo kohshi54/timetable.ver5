@@ -12,6 +12,7 @@ struct TaskListViewVertical: View {
     @ObservedObject var model = ContentViewModel()
     @AppStorage("idsaved") var idSaved = ""
     @State var noTask = false
+    @State var taskPics: [String] = ["Teruteru4", "nanami", "Teruteru5"]
     var body: some View {
         NavigationView {
             ForEach(model.cellModels.filter {$0.id == idSaved}, id: \.id) { oneModel in
@@ -53,7 +54,7 @@ struct TaskListViewVertical: View {
                     VStack {
                         Text("課題無し！！！").font(.system(.title, design: .monospaced))
                         Text("オレえらい！！！さすが！！！").font(.system(.title, design: .monospaced))
-                        Image("nanami").resizable().scaledToFit()
+                        Image(taskPics.randomElement() ?? "nanami").resizable().scaledToFit()
                     }
                 }
             }
